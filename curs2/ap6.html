@@ -29,7 +29,7 @@
                 //daca se definsete costructorul in clasa copil nu se mai apeleaza automat 
                 //constructorul din clasa parinte 
                 //ca sa apelez constructorul din clasa parinte folosin super();
-                super(legs); // apelez constructorul din clasa parinte
+                // super(legs); // apelez constructorul din clasa parinte
             }
             fly() { 
                 console.log('flying'); 
@@ -43,13 +43,13 @@
                 console.log(' penguins do not fly, they swim');
             }
         }
-        // let bird = new Bird(2);
-        // bird.walk();
-        // bird.fly();
+        let bird = new Bird(2);
+        bird.walk();
+        bird.fly();
 
         let pinguin = new Pinguin();  // corect new Pinguin(2);
-        pinguin.walk();
-        pinguin.fly();
+        // pinguin.walk();
+        // pinguin.fly();
     </script>
 </body>
 
